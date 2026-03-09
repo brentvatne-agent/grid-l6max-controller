@@ -1,0 +1,238 @@
+{
+    "name": "Media Control - Apple Music + YouTube",
+    "description": "PBF4 profile for combined Apple Music and YouTube control. Buttons: Play/Pause, Previous, Next, Love/Fullscreen. Pots and faders unused.",
+    "type": "PBF4",
+    "isGridProfile": true,
+    "version": {
+        "major": "1",
+        "minor": "2",
+        "patch": "28"
+    },
+    "configs": [
+        {
+            "controlElementNumber": 0,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 1,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 2,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 3,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 4,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 5,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 6,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 7,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,50,50,50) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@cb]] print('unused') ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 8,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,255,100) ?>"
+                },
+                {
+                    "event": "3",
+                    "config": "<?lua --[[@cb]] if self:bst()==127 then gps(\"package-apple-music\",\"playstate\",\"toggle\") gps(\"package-chrome-youtube\",\"youtube\",\"toggle\") end ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 9,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,150,255) ?>"
+                },
+                {
+                    "event": "3",
+                    "config": "<?lua --[[@cb]] if self:bst()==127 then gps(\"package-apple-music\",\"playstate\",\"previous\") gps(\"package-chrome-youtube\",\"youtube\",\"previous\") end ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 10,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,150,255) ?>"
+                },
+                {
+                    "event": "3",
+                    "config": "<?lua --[[@cb]] if self:bst()==127 then gps(\"package-apple-music\",\"playstate\",\"next\") gps(\"package-chrome-youtube\",\"youtube\",\"next\") end ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 11,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@cb]] self.lp=0--[[@l]] local n=self:ind()--[[@glc]] glc(n,1,252,60,68) ?>"
+                },
+                {
+                    "event": "3",
+                    "config": "<?lua --[[@l]] local n=self:ind()--[[@cb]] if self:bst()==127 then gtt(n,500) end if self:bst()==0 then gtp(n) if self.lp==0 then gps(\"package-apple-music\",\"playstate\",\"love\") end self.lp=0 end ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] self.lp=1 gtp(self:ind()) gps(\"package-chrome-youtube\",\"youtube\",\"fullscreen\") glc(self:ind(),1,0,0,255) ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 255,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@c]] --[[PBF4: Media Control]]--[[@c]] --[[Btn8:PlayPause Btn9:Prev Btn10:Next]]--[[@c]] --[[Btn11: Love(tap) Fullscreen(hold)]] ?>"
+                },
+                {
+                    "event": "4",
+                    "config": "<?lua --[[@cb]] gpl(gpn()) ?>"
+                },
+                {
+                    "event": "5",
+                    "config": "<?lua --[[@l]] local ch,cmd,p1,p2=midi.ch,midi.cmd,midi.p1,midi.p2 ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        }
+    ]
+}
